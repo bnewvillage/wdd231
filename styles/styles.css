@@ -16,15 +16,13 @@ body{
     font-family: "Roboto", serif;
     font-weight: 300;
     font-style: normal;
-}
-
-main{
-    background-color: var(--primaryOne);
+    box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
     color:var(--primaryTwo);
+    font-weight:400;
 }
 
 
@@ -37,7 +35,27 @@ header{
     margin-top:0;
     background-color: var(--secondaryOne);
     color:black;
-    
+    padding:10px;
+}
+
+#headerImageTitle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap:5px;
+}
+
+header h1{
+    padding: 10px;
+}
+
+header img{
+    height:80px;
+    width:100px;
+    object-fit: cover;
+    border-radius: 20px;
+    border:var(--primaryOne) solid 2px;
 }
 
 #menu{
@@ -66,7 +84,8 @@ header{
 
 nav ul li{
     text-align: center;
-    padding:2px;
+    width:100%;
+    padding: 3px;
 }
 
 nav ul li:hover{
@@ -74,10 +93,67 @@ nav ul li:hover{
     cursor: pointer;
 }
 
+/*MAIN RULES*/
+#location img{
+    height:100px;
+}
+
+main{
+    text-align: center;
+    background-color: var(--primaryOne);
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 15px;
+}
+
+section{
+    margin: 10px;
+    padding:15px;
+    background: var(--primaryTwo);
+}
+
+#certificate{
+    grid-column: span 2;
+}
+
 
 footer{
+    text-align: center;
     background-color: var(--secondaryOne);
     color:black;
+    padding:15px;
+}
+
+#courseCard{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width: 100px;
+    background:var(--primaryOne);
+    padding: 5px 0 5px 0;
+}
+
+.completed{
+    background: var(--secondaryTwo);
+    color:black;
+    font-weight: 400;
+}
+
+.filterButton{
+    width:50px;
+    padding:3px 0 3px 0;
+    cursor: pointer;
+    background: #F77D24;
+    border-style: none;
+    border-radius: 2px;
+    font-weight: 700;
 }
 
 /* MEDIA RULES */
@@ -88,6 +164,9 @@ footer{
     }
     nav{
         display:none;
+    }
+    main{
+        display:block;
     }
 }
 

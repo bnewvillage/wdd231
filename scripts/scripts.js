@@ -111,6 +111,7 @@ function displayCourses(courses) {
     courses.forEach(course =>{
         const courseItem = document.createElement('li');
         courseItem.classList.add(course.completed ? 'completed' : 'incomplete');
+        courseItem.classList.add('card');
         courseItem.innerHTML = `${course.subject}  ${course.number}`;
         creditCurrent += parseInt(course.credits);
         cards.appendChild(courseItem);

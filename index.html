@@ -15,7 +15,8 @@
 </head>
 <body>
     <header>
-        <h1>Blaine Villanueva</h1>
+        <div id="headerImageTitle"><img src="images/profile-photo.webp" alt="man">
+        <h1>Blaine Villanueva</h1></div>
         <button id="menu"></button>
         <nav id="nav">
             <ul>
@@ -37,18 +38,22 @@
             </ul>
         </section>
 
-        <aside id="location">
+        <section id="location">
             <h2>Motor City</h2>
-            <img>
-        </aside>
+            <figure>
+            <img src="images/motor-city.webp" alt="motor city dubai">
+            <figcaption>AutoDrome Motor City</figcaption>
+            </figure>
+
+        </section>
 
         <section id="certificate">
             <h2>
                 Web and Computer Programming Certificate
             </h2>
-            <button id="all">All</button>
-            <button id="cse">CSE</button>
-            <button id="wdd">WDD</button>
+            <button id="all" class="filterButton">All</button>
+            <button id="cse" class="filterButton">CSE</button>
+            <button id="wdd" class="filterButton">WDD</button>
             <p>Total credits of courses list below: <span id="creditsRequired"></span></p>
             <div id="courseCard">
             </div>
