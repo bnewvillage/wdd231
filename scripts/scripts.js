@@ -106,17 +106,15 @@ const courses = [
 //array of courses
 function displayCourses(courses) {
     cards.innerHTML = '';
-    let creditCurrent = 0;
+    creditsTotal.textContent = courses.reduce((currentTotal, currentCredits) => currentTotal + currentCredits.credits, 0);
 
     courses.forEach(course =>{
         const courseItem = document.createElement('li');
         courseItem.classList.add(course.completed ? 'completed' : 'incomplete');
         courseItem.classList.add('card');
         courseItem.innerHTML = `${course.subject}  ${course.number}`;
-        creditCurrent += parseInt(course.credits);
         cards.appendChild(courseItem);
     })
-    creditsTotal.textContent = creditCurrent;
 }
 
 displayCourses(courses);
