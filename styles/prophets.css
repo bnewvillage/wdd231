@@ -1,0 +1,44 @@
+body{
+    background-color: beige;
+    font-family: 'Roboto', serif;
+    font-weight:300;
+}
+
+p {
+    text-align: center;
+    font-weight: 100;
+    margin:2px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin:0;
+}
+
+.portrait{
+    object-fit:cover;
+    width:100%;
+    
+}
+
+.cardContainer{
+    width:300px;
+    background-color: ivory;
+    padding:5px;
+}
+
+#cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    column-gap: .3rem;
+    row-gap: 1rem;
+    justify-items:center;
+}
+
+footer{
+    text-align: center;
+}

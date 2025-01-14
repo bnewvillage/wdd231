@@ -1,0 +1,15 @@
+{
+    "name":"Blaine Villanueva",
+    "dateMoved":"02-06-1996",
+    "numberOfFamily":2,
+    "visitedByBishopric": true,
+    "familyMembers":
+        [
+            {
+                "name":"Nina",
+                "gender": "female",
+                "birthdate":"02-25-2000"
+            }
+        ]
+}
+
