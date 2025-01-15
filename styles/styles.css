@@ -156,34 +156,29 @@ footer{
     font-weight: 700;
 }
 
+nav{
+    display :grid;
+    grid-template-rows: 0fr;
+    justify-items: center;
+    transition:grid-template-rows 0.3s ease-out;
+}
+
 /* MEDIA RULES */
 
 @media (max-width:640px){
     nav.open{
-        display:block;
+        grid-template-rows: 1fr;
     }
-    nav{
-        display:none;
-    }
-    main{
-        display:block;
+    nav ul {
+        overflow:hidden;
     }
 }
 
 @media (min-width:640px){
-    nav{
-        display:flex;
-        justify-content: center;
-    }
     nav ul{
         width:100%;
         display:flex;
         justify-content:space-evenly;
-        
-    }
-
-    #menu{
-        display:none;
     }
     
 }
