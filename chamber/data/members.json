@@ -1,0 +1,25 @@
+[
+    {
+        "name": "SpaceX",
+        "address": "1 Rocket Road, Hawthorne, CA",
+        "phoneNumber": 3103636000,
+        "url": "https://www.spacex.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SpaceX_Logo_Black.png/320px-SpaceX_Logo_Black.png"
+    },
+    {
+        "name": "Tesla",
+        "address": "3500 Deer Creek Road, Palo Alto, CA",
+        "phoneNumber": 6506815000,
+        "url": "https://www.tesla.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Amazon",
+        "address": "410 Terry Avenue North, Seattle, WA",
+        "phoneNumber": 8882804331,
+        "url": "https://www.amazon.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        "membershipLevel": 3
+    }
+]

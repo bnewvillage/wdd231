@@ -1,0 +1,115 @@
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.directory{
+    background: var(--primaryOne);
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color:white;
+}
+
+#buttons{
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+}
+
+#listButton, #gridButton{
+    width:20px;
+    padding:0.5px;
+    margin:5px;
+    background:none;
+    border:none;
+    font:inherit;
+    color:inherit;
+    cursor:pointer;
+    outline:inherit;
+    display:flex;
+}
+
+#listButton.active{
+    color:white;
+    border-radius: 2px;
+    padding:2px;
+    width:24px;
+    border:1px solid white;
+}
+
+#gridButton.active{
+    color:white;
+    width:24px;
+    border:1px solid white;
+    border-radius: 2px;
+    padding:2px;
+}
+
+#gridButton img, #listButton img{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+
+#cards {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#cards.active{
+    display:block;
+}
+
+#cards.active .card{
+    height:80px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+#cards.active .card *{
+    padding:0;
+    margin:0;
+}
+
+#cards.active .card img{
+    display:none;
+}
+
+
+.card {
+    flex: 1;
+    color:black;
+    background-color: var(--secondaryTwo);
+    border: 1px solid navy;
+    height:300px;
+    text-align: center;
+    display:grid;
+    grid-template-rows: 2fr;
+    padding-bottom:20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.card *{
+    margin:0;
+    padding:0;
+    color:inherit;
+}
+
+.card img{
+    width:50%;
+}
+
+footer {
+    background: var(--secondaryOne);
+    padding: 20px;
+    text-align: center;
+}
