@@ -4,7 +4,8 @@
         "address": "1 Rocket Road, Hawthorne, CA",
         "phoneNumber": 3103636000,
         "url": "https://www.spacex.com",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SpaceX_Logo_Black.png/320px-SpaceX_Logo_Black.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SpaceX_Logo_Black.png/320px-SpaceX_Logo_Black.png",
+        "membershipLevel": 2
     },
     {
         "name": "Tesla",
@@ -21,5 +22,37 @@
         "url": "https://www.amazon.com",
         "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
         "membershipLevel": 3
+    },
+    {
+        "name": "Google",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA",
+        "phoneNumber": 6502530000,
+        "url": "https://www.google.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Microsoft",
+        "address": "1 Microsoft Way, Redmond, WA",
+        "phoneNumber": 4258828080,
+        "url": "https://www.microsoft.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Apple",
+        "address": "1 Apple Park Way, Cupertino, CA",
+        "phoneNumber": 4089961010,
+        "url": "https://www.apple.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Netflix",
+        "address": "100 Winchester Circle, Los Gatos, CA",
+        "phoneNumber": 4085403700,
+        "url": "https://www.netflix.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        "membershipLevel": 2
     }
 ]
