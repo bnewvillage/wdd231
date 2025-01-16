@@ -17,6 +17,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.currentPage{
+    text-decoration: underline;
+}
 header {
     display: flex;
     justify-content: space-between;
