@@ -4,6 +4,11 @@ main {
     max-width: 800px;
 }
 
+h1{
+    color:ivory;
+    text-align: center;
+}
+
 .directory{
     background: var(--primaryOne);
     padding: 20px;
