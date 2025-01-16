@@ -40,6 +40,7 @@ const displayMembers = (members) => {
         card.setAttribute('class', 'card');
         url.setAttribute('href', member.url);
         image.setAttribute('src', member.image);
+        image.setAttribute('alt', `${member.name} logo`)
         
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
