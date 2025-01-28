@@ -1,3 +1,6 @@
+h1, h2, h3{
+    font-size:1.5rem;
+}
 
 .hero {
     width: 100%;
@@ -132,7 +135,7 @@
 
 .featured-events{
     display:grid;
-    grid-template-rows:;
+    grid-template-rows: 1fr 4fr 4fr;
 }
 
 .featured-events div {
