@@ -8,19 +8,21 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
-
+    
 body {
     background-color: var(--primaryTwo);
     font-family: Roboto, serif;
     font-weight:300;
     padding: 0;
-    box-sizing: border-box;
+    margin:0;
 }
 
 .currentPage{
-    text-decoration: underline;
+    font-weight: 400;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -63,10 +65,17 @@ nav ul li{
     padding: 3px;
 }
 
-nav ul li:hover{
-    background: var(--secondaryTwo);
+nav ul li:hover {
     cursor: pointer;
 }
+
+nav ul li:hover a {
+    text-shadow: 0 0 10px rgb(214, 84, 84), 
+                 0 0 15px rgba(135, 46, 46, 0.9);
+    transition: text-shadow 0.3s ease;
+}
+
+
 
 nav{
     display :grid;

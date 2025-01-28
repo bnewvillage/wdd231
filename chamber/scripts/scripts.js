@@ -1,30 +1,18 @@
-//date for footer
-const currentYearElement = document.querySelector('#currentYear');
-const lastModifiedElement = document.querySelector('#lastModified');
-const today = new Date();
-const currentYear = today.getFullYear();
 
-currentYearElement.innerHTML = currentYear;
-lastModifiedElement.innerHTML = today;
 
-//menu button listener
-const menuButton = document.querySelector('#menu');
-const nav = document.querySelector('#nav');
-
-menuButton.addEventListener('click',()=>{
-    menuButton.classList.toggle('open');
-    nav.classList.toggle('open');
+//fetching members and displaying
+let membersData = []
+let featuredBusinesses = []
+import { getMembers, generateFeatured } from "./members.js";
+getMembers("./data/members.json").then(memberData =>{
+    membersData = memberData;
+    displayMembers(membersData);
+    featuredBusinesses = generateFeatured(membersData);
+    console.log(featuredBusinesses);
+    //display companies
+    displayFeatCompanies(featuredBusinesses);
 })
 
-//fetching members
-async function getMembers(jsonFile) {
-    const response = await fetch(jsonFile);
-     if (response.ok){
-        const data = await response.json();
-        console.table(data);
-        displayMembers(data);
-     }
-}
     //creating cards
 const cards = document.querySelector('#cards');
 const displayMembers = (members) => {
@@ -35,7 +23,6 @@ const displayMembers = (members) => {
         let address = document.createElement('p');
         let number = document.createElement('p');
         let url = document.createElement('a');
-        let membershipLevel = member.membershipLevel;
 
         card.setAttribute('class', 'card');
         url.setAttribute('href', member.url);
@@ -58,8 +45,6 @@ const displayMembers = (members) => {
     });
 }
 
-getMembers("./data/members.json");
-
 //grid-list toggle
 const gridButton = document.querySelector('#gridButton');
 const listButton = document.querySelector('#listButton');
@@ -78,3 +63,21 @@ gridButton.addEventListener('click',()=>{
     gridButton.classList.add('active');
     
 })
+
+
+//created featured cards
+const featCompanies = document.querySelector('.featured-companies');
+const displayFeatCompanies = (companies) =>{
+    companies.forEach(company => {
+        let card = document.createElement('section');
+        let name = document.createElement('h3');
+        let image = document.createElement('img');
+
+        name.textContent = `${member.name}`;
+        image.setAttribute('src',companies.image);
+
+        card.appendChild(image);
+        card.appendChild(name);
+        featCompanies.appendChild(card);
+    });
+}

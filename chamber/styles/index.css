@@ -1,0 +1,205 @@
+
+.hero {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 85vh;
+}
+
+.hero button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7rem;
+    height: 65px;
+    width: 300px;
+    font-size: 2rem;
+    border-radius: 12px;
+    background-color: var(--primaryTwo);
+    color: ivory;
+    border: none;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover, .hero button:focus, .hero button:active {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+    transform: translateX(-50%) scale(1.05);
+    outline: none;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(500px,2fr);
+    gap: 1rem;
+    margin:10px auto 30px auto;
+    width: 1080px;
+    grid-template-rows: minmax(500px, auto);
+}
+
+.featured-companies{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.companyCard {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    background-color: var(--secondaryTwo);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+    align-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        "header header"
+        "figure figure"
+        "phone phone"
+        "website website"
+        "address address"  
+}
+
+.companyCard p, .companyCard a{
+    font-size:.9rem;
+    align-self: start;
+}
+
+.companyCard:hover {
+    transform: scale(1.04);
+}
+
+.level{
+    grid-area: header;
+    border-radius: 5%;
+}
+
+.levelGold{
+    background-color: gold;
+    border:1px solid goldenrod;
+}
+
+.levelSilver{
+    background: silver;
+    border:1px solid rgb(162, 162, 162);
+}
+
+.companyCard figure{
+    grid-area: figure;
+    align-content: center;
+    height:200px;
+}
+
+.phone{
+    grid-area: phone;
+
+}
+
+.website{
+    grid-area: website;
+}
+
+
+.address{
+    grid-area: address;
+}
+
+
+
+
+.imgCompany {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+
+/* EVENTS SECTION */
+.featured-events, .companiesSection {
+    background: var(--secondaryOne);
+    height: inherit;
+    padding:10px;
+    border-radius: 2%;
+}
+
+.featured-events{
+    display:grid;
+    grid-template-rows:;
+}
+
+.featured-events div {
+    background: var(--secondaryTwo);
+    margin-bottom: 1rem;
+    padding:5px;
+    border-radius: 2%;
+}
+
+.featured-events h1{
+    margin:0 0 10px 0;
+}
+
+/* WEATHER SECTION */
+#weather {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 1080px;
+    gap: 1rem;
+}
+
+
+
+.weather-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondaryOne);
+  }
+
+#forecast{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+}
+
+
+  
+
+footer {
+    background-color: var(--secondaryOne);
+    color: var(--primaryTwo);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .mainSection{
+        grid-template-columns: 1fr;
+    }
+
+    .featured, #weather{
+        width:inherit;
+    }
+
+    #weather{
+        grid-template-columns: 1fr;
+    }
+}
