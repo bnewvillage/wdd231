@@ -84,7 +84,7 @@ async function fetchWeather() {
       //display current weather
       document.getElementById("current-temp").textContent = `Temperature: ${currentTemp}°C`;
       document.getElementById("current-desc").textContent = `${formatDesc}`;
-      document.getElementById("current-icon").src = `https://openweathermap.org/img/wn/${currentIcon}@2x.png`;
+      document.getElementById("current-icon").setAttribute('src',`https://openweathermap.org/img/wn/${currentIcon}@2x.png`)
   
       //get 3-day
       const forecast = document.getElementById("forecast");
