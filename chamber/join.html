@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Chamber of Commerce</title>
+
+    <meta name="author" content="Blaine Villanueva">
+    <meta name="description" content="join page for projects">
+    <meta property="og:title" content="Blaine Villanueva's Website">    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.dsc.ae/wp-content/themes/dsc/images/site-logo.svg">    
+    <meta property="og:url" content="https://bnewvillage.github.io/wdd231/chamber/join.html">
+    <meta name="twitter:card" content="https://bnewvillage.github.io/wdd231/images/profile-photo.webp">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/sitewide.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/sitewide.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+  
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/sportscity.svg" alt="Sports City Chamber of Commerce">
+        </div>
+        <button id="menu" aria-label="menu button"></button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="currentPage"><a href="join.html" class='currentPage'>Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+        <h1>Membership Application Form</h1>
+        <label> 
+            First Name
+            <input type="text" required title="Enter first name" name="firstName" autocomplete="given-name" id="firstName">
+        </label>
+        
+        <label>
+            Last Name
+            <input type="text" required name="lastName" title="Enter Last Name" autocomplete="family-name" id="lastName">
+        </label>
+        
+        <label>
+            Organizational Title
+            <input type="text" name="organizationalTitle" title="Enter organizational title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" id="organizationalTitle">
+        </label>
+        
+        <label>
+            Email Address
+            <input type="email" required name="email" title="Enter email address" autocomplete="email" placeholder="johnsmith@email.com" id="email">
+        </label>
+        
+        <label>
+            Phone Number (Mobile)
+            <input type="tel" required name="phoneNumber" title="Enter phone number" autocomplete="tel" id="phoneNumber">
+        </label>
+        
+        <label>
+            Business Name
+            <input type="text" required name="businessName" title="Enter business name" autocomplete="organization" id="businessName">
+        </label>
+        
+        <h2>Membership Level</h2>
+        <label class="radio">
+            <input type="radio" name="membershipLevel" value="1"> NP Membership
+        </label>
+        <label class="radio">
+            <input type="radio" name="membershipLevel" value="2"> Bronze Membership
+        </label>
+        <label class="radio">
+            <input type="radio" name="membershipLevel" value="3"> Silver Membership
+        </label>
+        <label class="radio">
+            <input type="radio" name="membershipLevel" value="4"> Gold Membership
+        </label>
+        
+        <label>
+            Business Description
+            <input type="text" title="Enter business description" name="businessDescription" id="businessDescription">
+        </label>
+        
+        <label>
+            <input type="hidden" name="timestamp" id="timestamp">
+        </label>
+        
+        <button type="submit" id="submitBtn">Apply</button>
+        </form>
+
+        <section>
+            <article>
+                <h3>NP Membership</h3>
+                <p>Basic access to events and networking.</p>
+                <a href="#" data-modal="npModal">Learn More</a>
+            </article>
+            <article>
+                <h3>Bronze Membership</h3>
+                <p>Discounted events & basic advertising.</p>
+                <a href="#" data-modal="bronzeModal">Learn More</a>
+            </article>
+            <article>
+                <h3>Silver Membership</h3>
+                <p>Training sessions & premium advertising.</p>
+                <a href="#" data-modal="silverModal">Learn More</a>
+            </article>
+            <article>
+                <h3>Gold Membership</h3>
+                <p>VIP events & spotlight homepage ads.</p>
+                <a href="#" data-modal="goldModal">Learn More</a>
+            </article>
+        </section>
+    </main>
+    <dialog id="npModal">
+        <h2>NP Membership Benefits</h2>
+        <p>Basic event access, networking opportunities.</p>
+        <button data-close="npModal">Close</button>
+    </dialog>
+    
+    <dialog id="bronzeModal">
+        <h2>Bronze Membership Benefits</h2>
+        <p>Discounted event entry, basic advertising perks.</p>
+        <button data-close="bronzeModal">Close</button>
+    </dialog>
+    
+    <dialog id="silverModal">
+        <h2>Silver Membership Benefits</h2>
+        <p>Training access, premium advertising spots.</p>
+        <button data-close="silverModal">Close</button>
+    </dialog>
+    
+    <dialog id="goldModal">
+        <h2>Gold Membership Benefits</h2>
+        <p>VIP event access, homepage spotlight advertising.</p>
+        <button data-close="goldModal">Close</button>
+    </dialog>
+
+    </main>
+
+    <footer>
+
+        <p>©️ <span id="currentYear"></span>
+            Blaine Villanueva @ Dubai, United Arab Emirates
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>

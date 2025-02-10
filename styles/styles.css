@@ -159,6 +159,16 @@ nav{
     transition:grid-template-rows 0.3s ease-out;
 }
 
+/*ANIMATION RULES*/
+#headerImage{
+    opacity:0;
+    transition: opacity 1s;
+}
+
+#headerImage.loaded{
+    opacity:1;
+}
+
 /* MEDIA RULES */
 
 @media (max-width:640px){

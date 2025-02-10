@@ -112,9 +112,3 @@ h1{
 .card img{
     width:50%;
 }
-
-footer {
-    background: var(--secondaryOne);
-    padding: 20px;
-    text-align: center;
-}

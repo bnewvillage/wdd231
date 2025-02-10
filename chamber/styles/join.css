@@ -1,0 +1,109 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form label, form h2{
+  display: block;
+  margin-bottom: 10px;
+  font-weight:600;
+  font-size: 1rem;
+}
+
+.radio{
+    font-weight: 400;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit,150px);
+  gap: 10px;
+}
+
+article {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.5s ease-out both;
+  height:150px;
+}
+
+article a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:100%;
+}
+
+dialog {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  margin:auto auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

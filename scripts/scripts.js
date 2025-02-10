@@ -130,3 +130,9 @@ filterWDD.addEventListener(`click`, ()=> {
 filterAll.addEventListener(`click`, ()=>{
     displayCourses(courses);
 })
+
+//animation load listener
+const headerImage = document.querySelector('#headerImage')
+window.addEventListener('load', ()=>{
+    headerImage.classList.add('loaded');
+})

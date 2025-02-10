@@ -84,6 +84,12 @@ nav{
     transition:grid-template-rows 0.3s ease-out;
 }
 
+footer {
+    background: var(--secondaryOne);
+    padding: 20px;
+    text-align: center;
+}
+
 @media (max-width:480px){
     nav.open{
         grid-template-rows: 1fr;
