@@ -1,0 +1,20 @@
+Site Name: MotorCity UAE
+
+Site Purpose:
+A website for the internal team of a motorcycle shop that includes a home page with highlights that would help employees. A warranty request page. An order request page.
+
+Scenarios:
+What information do I need to request for a warranty application for products from the brand Klim?
+How do I request for a special order to be placed?
+
+Color Schema:
+
+Primary Color: #000957 - Background Color
+Secondary Color: #344CB7 - Header and Footer Color
+Accent Color 1: #577BC1, Accent Color 2: #FFEB00 - Button colors and highlight effects such as hover effects.
+
+Typography:
+Roboto 700 - Headings
+Roboto 400 - Subheadings
+Roboto 300, 100 - Content Text
+
