@@ -25,6 +25,7 @@ places.forEach(place => {
     learnBtn.onclick = ()=> {window.open(place.url, '_blank')};
     image.classList.add('placeImg');
     image.setAttribute('alt', place.title);
+    image.setAttribute('loading', 'lazy');
     
 
     card.appendChild(title);
