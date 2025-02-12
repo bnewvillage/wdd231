@@ -32,6 +32,8 @@ h1{
   .placeImg{
     width:100%;
   }
+
+
   .card .description{grid-area: description;}
   .card .address{grid-area: address;}
   .card .learnBtn{grid-area: button;}

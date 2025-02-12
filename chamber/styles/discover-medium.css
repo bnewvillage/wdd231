@@ -8,4 +8,8 @@
     gap:1rem;
     }
 
+    .card .placeImg:hover{
+        transform: scale(1.1);
+    }
+
 }
