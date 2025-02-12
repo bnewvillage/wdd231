@@ -1,0 +1,63 @@
+#visitor-message{
+    text-align: center;
+    background: white;
+    padding:0.5rem;
+    font-weight: 400;
+}
+
+  .card {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display:grid;
+    gap:1rem;
+    grid-template-areas: 
+    "title"
+    "image"
+    "description"
+    "address"
+    "button"
+    ;
+  }
+
+  .card .title{grid-area: title;}
+  .card .placeImg{grid-area: image;}
+  .placeImg{
+    width:100%;
+  }
+  .card .description{grid-area: description;}
+  .card .address{grid-area: address;}
+  .card .learnBtn{grid-area: button;}
+  
+  .card h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .address {
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+  
+  .card button {
+    background-color: #FFEB00;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #e6d900;
+  }
+
+  #featuredSection{
+    margin:1rem;
+    display:grid;
+    gap:1rem;
+  }
+

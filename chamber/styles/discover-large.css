@@ -1,0 +1,13 @@
+@media (min-width: 855px) {
+    .card{
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image address"
+    "button button";
+    gap:1rem;
+    }
+    #featuredSection{
+        grid-template-columns: 1fr 1fr;
+    }
+}

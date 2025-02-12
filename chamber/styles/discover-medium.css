@@ -1,0 +1,11 @@
+@media (min-width: 641px) {
+    .card{
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image address"
+    "button button";
+    gap:1rem;
+    }
+
+}
