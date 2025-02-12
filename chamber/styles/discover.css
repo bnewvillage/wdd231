@@ -5,6 +5,11 @@
     font-weight: 400;
 }
 
+h1{
+    text-align: center;
+    color:ivory;
+}
+
   .card {
     background-color: #fff;
     color: #000;
