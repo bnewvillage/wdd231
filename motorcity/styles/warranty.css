@@ -65,6 +65,10 @@
     width: calc(50% - 10px);
     margin-right: 10px;
   }
+
+  *::placeholder{
+    color:ivory;
+  }
   
   #caseDescription {
     width: 100%;
@@ -127,12 +131,14 @@
     pointer-events: none;
   }
   
-  button {
-    background-color: var(--accentOne);
+  .warrantySubmit {
+    background-color: var(--accentTwo);
+    color:black;
     border: none;
     border-radius: 8px;
     padding: 12px 20px;
     font-size: 18px;
+    font-weight:700;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
@@ -182,7 +188,6 @@
   
   #fileList li {
     margin-bottom: 5px;
-    color: var(--text-color);
     word-wrap: break-word;
   }
   
@@ -204,7 +209,7 @@
   @media (max-width: 768px) {
     form {
       padding: 10px;
-      width: 100%;
+      width: 90%;
       margin: 0;
     }
     

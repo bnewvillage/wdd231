@@ -118,6 +118,21 @@ nav ul{
   .activePage{
     background-color: var(--primary);
   }
+
+  footer{
+    margin-top:3rem;
+    grid-template-areas:
+    "logo"
+    "address"
+    "socials";
+    justify-content: center ;
+    justify-items: center;
+  }
+  .social-icons{
+    grid-area: socials;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width:768px){
@@ -149,8 +164,20 @@ nav ul{
     background-color: var(--accentTwo);
   }
   
-  .btn:hover, .warrantySubmit:hover{
+  .btn:hover, .warrantySubmit:hover , button:hover{
     box-shadow: 0 0 5px 1px ivory;
+  }
+  footer{
+    grid-template-areas:
+    "logo address socials"
+    ;
+    padding: 1rem 1rem 0 1rem;
+    grid-template-columns: 1fr 1fr 4fr;
+  }
+  .social-icons{
+    grid-area: socials;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -160,15 +187,15 @@ nav ul{
 
 
 /*--FOOTER--*/
+footer *{
+  margin:1rem;
+
+}
+
 footer{
   background-color: var(--secondary);
+  height:auto;
   display:grid;
-  grid-template-areas:
-  "logo address socials"
-  ;
-  height:150px;
-  padding: 1rem 1rem 0 1rem;
-  grid-template-columns: 1fr 1fr 4fr;
 }
 
 #footerLogo{
@@ -180,11 +207,7 @@ footer{
   grid-area: address;
 }
 
-.social-icons{
-  grid-area: socials;
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 .iconContainer{
   margin: 0 5px;

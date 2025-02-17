@@ -269,7 +269,7 @@ fileList.removeChild(listItem);
 }
 
 //submit files
-const form = document.getElementById('uploadForm');
+const form = document.getElementById('dynamicForm');
 
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -298,7 +298,6 @@ const form = document.getElementById('uploadForm');
           reader.readAsDataURL(file);
         }
         spinner.style.display = 'none';
-        alert('Files uploaded successfully!');
       });
 
 
@@ -317,10 +316,6 @@ function toggleRequired() {
         replacedNo.setAttribute('required');
     }
 }
-
-
-
-
 
 
 document.getElementById('dynamicForm').addEventListener('submit', async function(e) {
