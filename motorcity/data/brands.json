@@ -1,0 +1,9 @@
+[
+    { "name": "Wissam", "brands": ["Ace Bikes", "Akrapovic", "Chigee", "KLIM", "Rukka", "Wera"] },
+    { "name": "Sallouty", "brands": ["Alpinestars", "BS Batteries", "Daytona", "Dr. Jekill and Mr. Hyde", "Knox", "Leatt", "Lone Rider", "SIDI", "USWE", "VR46"] },
+    { "name": "Georgio", "brands": ["Antigravity Batteries", "Baja Designs", "Bonamici", "Denali", "Hex", "Optimate", "R&G", "Rizoma", "ROK Form"] },
+    { "name": "Peter", "brands": ["Arai", "Five Gloves", "John Doe", "Midland", "Qwart", "Schuberth", "Sena", "Dainese"] },
+    { "name": "Khalid", "brands": ["ASV", "DiD", "DNA Filter", "K&N", "Motion Pro", "Motorex", "NRC", "SAMCO Hoses", "TST", "WRS"] },
+    { "name": "Sergio", "brands": ["AXP", "Kriega", "MFW", "SW-Motech", "Wunderlich"] },
+    { "name": "Blaine", "brands": ["Quad Lock", "SP Connect", "Grip Puppy", "NoNoise"] }
+]

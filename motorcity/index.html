@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Blaine Villanueva">
+    <meta name="description" content="MotorCity UAE internal process websites">
+    <title>MotorCity UAE</title>
+    <link rel="stylesheet" href="styles/sitewide.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/sitewide.js" type="module"></script>
+    <script src="scripts/modal.js" type="module"></script>
+    <script src="scripts/homepage.js" type="module"></script>
+    
+
+</head>
+<body>
+
+    <header>
+        <img src="images/motorcitylogo.png" class="logo" id="headerLogo" alt="MotorCity Logo">
+        <button id="menu" aria-label="menu button"></button>
+        <nav id="nav">
+            <ul>
+                <li class="activePage"><a href="index.html" id="home">Home</a></li>
+                <li class="inactivePage"><a href="warranty.html">Warranty</a></li>
+                <li id="order"><a href="order.html" class="btn">Place an Order</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newSection">
+            <h1>What's new in MotorCity</h1>
+            <section id="newSectionCards">
+                <figure class="card" id="firstCard">
+                    <img src="images/alpinestars.webp" alt="Alpinestars GP-R7 1PC Leather Suit" loading="lazy">
+                    <figcaption>GP-R7 1PC Leather Suit</figcaption>
+                </figure>
+                <figure class="card" id="secondCard">
+                    <img src="images/spectrumblackkriospro.webp" alt="Krios Pro Helmet Spectrum Black - Fiery Red" loading="lazy">
+                    <figcaption>Krios Pro Helmet Spectrum Black - Fiery Red</figcaption>
+                </figure>
+                <figure class="card" id="thirdCard">
+                    <img src="images/leatt.webp" alt="Jacket ADV Rally 5.5" loading="lazy">
+                    <figcaption>Jacket ADV Rally 5.5</figcaption>
+                </figure>
+            </section>
+        </section>
+            <div class="line"></div>
+
+        <section id="announcements">
+            <h1>Announcements</h1>
+            <article>
+                <h2>Changes with ERP</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa impedit magni in recusandae ullam commodi sed rem reprehenderit ut, saepe iure sapiente distinctio quae? Assumenda nisi sint voluptatum repellendus? Soluta, molestias fugiat. Eaque vero dolores maxime perspiciatis ipsam quae voluptatibus aspernatur, fuga praesentium, ipsum ex quas excepturi repudiandae perferendis nemo, voluptates saepe accusantium accusamus quibusdam ea! Repellendus, illo unde in quia ipsum beatae, porro corrupti aperiam maxime error dolor suscipit praesentium libero at commodi harum, aspernatur iusto illum? Culpa tempore harum sequi quibusdam, perspiciatis natus aperiam quod architecto illum vitae officia quisquam, itaque nostrum sed aliquid dolorem provident, laboriosam reiciendis.</p>
+            </article>
+            <article>
+                <h2>Brand hand-off for disribution</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore earum deleniti at, culpa tempore fuga laborum, error quam id animi, voluptates exercitationem ea a quos! Nostrum reprehenderit dicta eveniet?</p>
+            </article>
+        </section>
+            <div class="line"></div>
+
+        <section id="brandSection">
+                <h2>
+                    Brands and Assigned Brand Managers
+                </h2>
+                <div class="filterButtons">
+                <button id="all" class="filterButton btn">All</button>
+                <button id="wissam" class="filterButton btn">Wissam</button>
+                <button id="sallouty" class="filterButton btn">Sallouty</button>
+                <button id="sergio" class="filterButton btn">Sergio</button>
+                <button id="georgio" class="filterButton btn">Georgio</button>
+                <button id="peter" class="filterButton btn">Peter</button>
+                <button id="khalid" class="filterButton btn">Khalid</button>
+                <button id="blaine" class="filterButton btn">Blaine</button>
+                    </div>
+                <div id="brandCards">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/motorcitylogo.png" class="logo" id="footerLogo" alt="MotorCity Logo">
+        <address id="footerAddress">
+            <p>Dubai Autodrome, Motor City</p>
+            <p>Dubai, United Arab Emirates</p>
+        </address>
+        <div class="social-icons">
+            <span class="iconContainer"><img src="images/social-icons/facebook.png" width=30px></span>
+            <span class="iconContainer"><img src="images/social-icons/instagram.png" width="30px"></span>
+            <span class="iconContainer"><img src="images/social-icons/whatsapp.png" width="30px"></span>
+        </div>
+    </footer>
+
+    <dialog id="firstFeaturedModal" class="cardModal">
+        <img src="images/alpinestars.webp" alt="GP-R7 1PC Leather Suit" loading="lazy">
+        <div class="modal-content">
+          <button class="firstClose" aria-label="Close">&times;</button>
+          <h2>GP-R7 1PC Leather Suit</h2>
+          <p>
+            Optimized for trackday, racing, and advanced road riding, this suit is crafted from race-grade 1.3mm bovine leather for superior abrasion resistance, flexibility, and protection. Its race fit features extensive perforations for airflow and an integrated aero hump designed to work seamlessly with the Supertech R10 helmet.
+          </p>
+      
+          <h3>Key Features:</h3>
+      
+          <h4>Material &amp; Fit:</h4>
+          <ul>
+            <li>1.3mm race-spec leather with dual-layer reinforcement in critical areas.</li>
+            <li>Ergonomic race fit with pre-curved arms, legs, and multi-directional leather accordions.</li>
+          </ul>
+      
+          <h4>Protection:</h4>
+          <ul>
+            <li>CE Level 2 Nucleon PLASMA Pro armor on elbows, shoulders, knees, and shins.</li>
+            <li>Integrated GP DFS shoulder/knee armor and replaceable knee sliders.</li>
+            <li>Optional chest and full-back protectors available.</li>
+          </ul>
+      
+          <h4>Aerodynamics &amp; Ventilation:</h4>
+          <ul>
+            <li>Supertech R10 aero hump for streamlined performance.</li>
+            <li>Extensive perforations across the torso, thighs, and arms.</li>
+            <li>Airbag system compatibility.</li>
+          </ul>
+      
+          <h4>Additional Details:</h4>
+          <ul>
+            <li>Kevlar grip zone on the knee for improved contact.</li>
+            <li>Zippered, detachable comfort liner for off-bike comfort.</li>
+          </ul>
+        </div>
+    </dialog>
+    <dialog id="secondFeaturedModal" class="cardModal">
+    <img src="images/spectrumblackkriospro.webp" alt="Krios Pro Spectrum Black - Fiery Red" loading="lazy">
+    <div class="modal-content">
+        <button class="secondClose" aria-label="Close">&times;</button>
+        <h2>Krios Pro Spectrum Black</h2>
+    
+        <section>
+            <h3>Shell &amp; Construction</h3>
+            <ul>
+            <li>Full carbon fiber hand-laid shell</li>
+            <li>Optimized shell resin distribution for weight reduction</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Impact Protection</h3>
+            <ul>
+            <li>Koroyd® energy absorbing materials/construction</li>
+            <li>Koroyd® structures crush homogeneously for better impact absorption</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Ventilation &amp; Aerodynamics</h3>
+            <ul>
+            <li>Fully adjustable chin/forehead vents</li>
+            <li>Refined aerodynamics, vents, liner system for quieter ride</li>
+            <li>Visor and spoiler designed for aerodynamic stability</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Shield &amp; Visor</h3>
+            <ul>
+            <li>Clear anti-scratch polycarbonate shield</li>
+            <li>Photocromic light-sensitive shield included</li>
+            <li>Pinlock® anti-fog insert lens included</li>
+            <li>Quick-release, no-tool shield and visor</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Closure &amp; Fit</h3>
+            <ul>
+            <li>FID-LOCK® strap closure system</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Ride Modes &amp; Compatibility</h3>
+            <ul>
+            <li>Four ride modes: Street, Adventure, Dirt, Trail</li>
+            <li>Off-road goggle compatible with face shield removed</li>
+            <li>SENA 10U compatible</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Liner &amp; Certification</h3>
+            <ul>
+            <li>Klimatek™ antimicrobial/moisture-wicking liner</li>
+            <li>ECE 22.06/DOT certified</li>
+            </ul>
+        </section>
+        </div>
+    </dialog>
+    <dialog id="thirdFeaturedModal" class="cardModal">
+        <img src="images/leatt.webp" alt="ADV Rally 5.5 Jacket" loading="lazy">
+        <div class="modal-content">
+        <button class="thirdClose" aria-label="Close">&times;</button>
+            <h2>ADV Rally 5.5 Jacket</h2>
+
+        <section>
+      <h3>Overview</h3>
+      <p>
+        High-performance adventure jacket for road and off-road riding. Lightweight,
+        flexible, and durable with a removable protection liner.
+      </p>
+        </section>
+
+        <section>
+      <h3>Protection</h3>
+        <ul>
+            <li>Leatt 3DF liner for CE Level 1 impact protection (shoulders, back, elbows, optional chest)</li>
+            <li>Compatible with full body protectors and neck braces</li>
+        </ul>
+        </section>
+
+        <section>
+      <h3>Ventilation</h3>
+        <ul>
+            <li>Adjustable front zip with mesh panel and removable arms for maximum airflow</li>
+            <li>Rear exhaust vent and dedicated 2L hydration pocket</li>
+        </ul>
+    </section>
+
+    <section>
+      <h3>Materials & Features</h3>
+      <ul>
+        <li>Ripstop 4-way stretch, DWR-coated shell with reinforced impact areas</li>
+        <li>EN 17092-3-2020 certified, 5-year warranty, reflective detailing</li>
+        <li>Plastic-free packaging</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Adjustments & Storage</h3>
+      <ul>
+        <li>Multiple adjustments for a custom fit</li>
+        <li>Large storage pockets, handwarmer, cargo, and chest pockets</li>
+      </ul>
+    </section>
+  </div>
+</dialog>
+
+</body>
+</html>

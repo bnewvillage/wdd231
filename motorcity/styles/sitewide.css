@@ -1,0 +1,209 @@
+:root {
+--primary: #344CB7;
+--secondary: #000957;
+--accentOne: #577BC1 ;
+--accentTwo: #FFEB00 ;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color:inherit;
+  font-weight:700;
+  letter-spacing: 1px;
+  width:100%;
+  height:100%;
+  display:block;
+  align-content: center;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  list-style-type:none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: var(--primary);
+  color: ivory;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--secondary);
+  text-align: center;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height:60px;
+  align-items: center;
+}
+
+#headerLogo{
+  height:45px;
+  padding-left: 1rem;
+}
+
+nav{
+  height:inherit;
+}
+
+nav ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height:inherit;
+}
+
+/*MENU RULES*/
+#menu{
+  font-size:1.5rem;
+  border:0;
+  background:none;
+  color:var(--primaryOne);
+  right:10px;
+  top: 10px;
+  position:absolute;
+}
+
+#menu::before{
+  content:"☰";
+  cursor: pointer;
+}
+
+#menu.open::before{
+  content:"✖️";
+  cursor: pointer;
+}
+
+/*RESPONSIVE RULES*/
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: var(--secondary);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s linear;
+  }
+
+  nav.open ul {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s ease;
+    height:inherit;
+  }
+  nav.open li{
+    padding: 10px 0 10px 0;
+    height:inherit;
+  }
+
+  header{
+    display:block;
+    height:auto;
+  }
+
+  header img{
+    padding:0;
+    margin-top:5px;
+  }
+
+  .activePage{
+    background-color: var(--primary);
+  }
+}
+
+@media (min-width:768px){
+  #menu{
+    display:none;
+  }
+
+  .activePage{
+    background-color: var(--primary);
+  }
+  
+  
+  .inactivePage:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary);
+  }
+  
+  #order{
+    display:grid;
+    align-items: center;
+    color:var(--secondary);
+    justify-content: center;
+  }
+  
+  .btn{
+    border-radius: 1rem;
+    height:40px;
+    width:150px;
+    background-color: var(--accentTwo);
+  }
+  
+  .btn:hover, .warrantySubmit:hover{
+    box-shadow: 0 0 5px 1px ivory;
+  }
+}
+
+/*END OF RESPONSIVE RULES*/
+
+
+
+
+/*--FOOTER--*/
+footer{
+  background-color: var(--secondary);
+  display:grid;
+  grid-template-areas:
+  "logo address socials"
+  ;
+  height:150px;
+  padding: 1rem 1rem 0 1rem;
+  grid-template-columns: 1fr 1fr 4fr;
+}
+
+#footerLogo{
+  grid-area: logo;
+  height:50px;
+}
+
+#footerAddress{
+  grid-area: address;
+}
+
+.social-icons{
+  grid-area: socials;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconContainer{
+  margin: 0 5px;
+}
+
+/*MAIN*/
+
+main{
+  max-width:1280px;
+  text-align: center;
+  margin:0 auto;
+}
+
+
+/*OTHERS*/
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: ivory;
+  margin: 10px 0;
+}
